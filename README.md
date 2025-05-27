@@ -117,7 +117,7 @@ MineIdle is provided for **personal, educational, and authorized use only**.
 
 NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
 
-Do not use it on public servers that forbid alternate accounts, bots, or automated play. Always respect server rules and local laws.
+Do not use it on public servers that forbid alternate accounts, bots, or automated play. Always respect server rules.
 
 ---
 
