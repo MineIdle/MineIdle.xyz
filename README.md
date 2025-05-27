@@ -21,7 +21,7 @@ Each session operates without rendering the Minecraft client and consumes minima
 - 🌐 **Web Dashboard** – Full control of your accounts through a clean interface
 - 🔐 **Secure Microsoft Login** – OAuth2 + refresh token support via MSAL
 - 🧠 **Idle / Anti-AFK Actions** – Move, swing, chat, look, jump automatically
-- 🔁 **Auto-Reconnect** – Reconnect agents after server disconnects
+- 🔁 **Auto-Reconnect** – Reconnect users after server disconnects
 - 💬 **Join & World Events** – Broadcast messages when entering worlds or joining servers
 - 📡 **Live Monitoring** – Real-time position tracking (X, Y, Z)
 - 🌍 **Proxy Support** – Route traffic via HTTPS or SOCKS5 proxies
