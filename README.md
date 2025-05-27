@@ -114,7 +114,8 @@ MineIdle is not a cheat client and is intended only for idle use, account presen
 ##  License & Usage
 
 MineIdle is provided for **personal, educational, and authorized use only**.
-MineIdle is not affiliated with or endorsed by Mojang, Microsoft, or any official Minecraft entity. Use is at your own risk.**.
+
+NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
 
 Do not use it on public servers that forbid alternate accounts, bots, or automated play. Always respect server rules and local laws.
 
