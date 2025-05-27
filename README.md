@@ -119,16 +119,6 @@ Do not use it on public servers that forbid alternate accounts, bots, or automat
 
 ---
 
-## 📫 Contact
-
-For feedback, support, or partnership inquiries:
-
-**Website:** [mineidle.xyz](https://mineidle.xyz)
-**GitHub:** [yourusername](https://github.com/yourusername)
-**Email:** yourname@example.com
-
----
-
 ##  Acknowledgements
 
 - [PrismarineJS](https://github.com/PrismarineJS) – for the mineflayer bot engine
