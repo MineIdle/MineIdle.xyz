@@ -1,6 +1,6 @@
 # MineIdle
 
-**MineIdle** is a secure, web-based platform designed to help users manage their own Minecraft accounts efficiently. It allows individuals to launch lightweight, headless Minecraft sessions via a browser-controlled dashboard—ideal for staying connected to personal or authorized servers without running the full Minecraft client locally.
+**MineIdle** is a secure, web-based platform designed to help users manage their own Minecraft accounts efficiently. It allows individuals to launch lightweight, headless Minecraft sessions via a browser controlled dashboard ideal for staying connected to personal or authorized servers without running the full Minecraft client locally.
 
 > ⚠️ MineIdle is in active development. It is intended strictly for **personal or authorized use only** and fully complies with Mojang’s [EULA](https://www.minecraft.net/en-us/eula) and [Usage Guidelines](http://aka.ms/mcusageguidelines) to the best of its ability.
 
