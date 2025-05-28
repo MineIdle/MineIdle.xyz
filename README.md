@@ -1,58 +1,64 @@
 # MineIdle
 
-**MineIdle** is a modern, web-based control panel for managing multiple Minecraft accounts on private or authorized servers. It allows users to launch lightweight, headless Minecraft sessions in the cloud, simulate presence, automate idle behaviors, and monitor real-time activity all from a user friendly dashboard.
+**MineIdle** is a secure, web-based platform designed to help users manage their own Minecraft accounts efficiently. It allows individuals to launch lightweight, headless Minecraft sessions via a browser-controlled dashboard—ideal for staying connected to personal or authorized servers without running the full Minecraft client locally.
 
-Designed for reliability, scalability, and ease of use, MineIdle is ideal for users who want their Minecraft accounts to remain online 24/7 without keeping their PC running.
-
-> ⚠️ MineIdle is currently in **active development** and is intended for **personal or authorized use only**. All features are developed in compliance with Mojang’s [End User License Agreement (EULA)](https://www.minecraft.net/en-us/eula) and [Usage Guidelines](http://aka.ms/mcusageguidelines).
+> ⚠️ MineIdle is in active development. It is intended strictly for **personal or authorized use only** and fully complies with Mojang’s [EULA](https://www.minecraft.net/en-us/eula) and [Usage Guidelines](http://aka.ms/mcusageguidelines).
 
 ---
 
-##  Overview
+## Overview
 
-MineIdle lets users securely authenticate their Minecraft accounts via Microsoft OAuth2 and launch idle sessions on trusted servers. These sessions are managed through an interactive dashboard and are perfect for testing, presence simulation, or server maintenance roles.
-
-Each session operates without rendering the Minecraft client and consumes minimal system resources. All settings are stored per user and persist between sessions.
+MineIdle enables users to securely authenticate their Minecraft accounts via Microsoft OAuth2 and manage session behavior from a personal dashboard. These sessions consume minimal resources and are ideal for testing, keeping farms loaded, or simulating idle activity on servers where alternate accounts are allowed.
 
 ---
 
-##  Key Features
+## Key Features
 
-- 🌐 **Web Dashboard** – Full control of your accounts through a clean interface
-- 🔐 **Secure Microsoft Login** – OAuth2 + refresh token support via MSAL
-- 🧠 **Idle / Anti-AFK Actions** – Move, swing, chat, look, jump automatically
-- 🔁 **Auto-Reconnect** – Reconnect users after server disconnects
-- 💬 **Join & World Events** – Broadcast messages when entering worlds or joining servers
-- 📡 **Live Monitoring** – Real-time position tracking (X, Y, Z)
-- 🌍 **Proxy Support** – Route traffic via HTTPS or SOCKS5 proxies
-- ☁️ **Persistent User Data** – Profiles and settings saved across sessions
-
----
-
-##  Architecture
-
-MineIdle uses a clean, modular architecture:
-
-| Layer      | Technology                  | Purpose                             |
-|------------|-----------------------------|-------------------------------------|
-| Backend    | Node.js, Express            | API routing, bot session control    |
-| Frontend   | React *(external repo)*     | Real-time web interface             |
-| Bot Engine | mineflayer                  | Minecraft protocol automation       |
-| Auth       | Microsoft OAuth2 + MSAL     | Secure login, token refresh         |
-| Database   | MongoDB                     | Stores user profiles & bot configs  |
+- **Web Dashboard** – Manage Minecraft accounts via an intuitive UI
+- **Microsoft Login (OAuth2)** – Secure login flow with refresh token support
+- **Idle / Anti-AFK** – Configure behaviors like movement, jumping, looking, etc.
+- **Auto-Reconnect** – Recover from disconnects automatically
+- **World Event Messages** – Custom messages on join, respawn, or world change
+- **Live Coordinates** – Track position in real time (X, Y, Z)
+- **Proxy Support** – Route connections via SOCKS5 or HTTPS proxies
+- **Persistent User Settings** – Per-user config stored securely in the database
 
 ---
 
-## ☁ Hosting & Scaling Strategy
+## Architecture
 
-MineIdle is designed for **cloud deployment** and will run on **dedicated VPS infrastructure or scalable cloud services** depending on demand.
+| Layer      | Technology              | Purpose                               |
+|-----------|--------------------------|----------------------------------------|
+| Backend   | Node.js, Express         | API routing, session orchestration     |
+| Frontend  | React *(external repo)*  | Real-time user interface               |
+| Bot Engine| [mineflayer](https://github.com/PrismarineJS/mineflayer) | Minecraft protocol control             |
+| Auth      | Microsoft OAuth2 + MSAL  | Secure login and token management      |
+| Database  | MongoDB                  | Persistent storage for user data       |
 
-Initial launch will be deployed on high-uptime VPS instances, with long-term plans to support:
+---
 
-- Horizontal scaling via Docker/Kubernetes
-- Load balancing per user session cluster
+## ☁ Hosting & Scaling
 
-Users will manage their accounts from anywhere through **https://mineidle.xyz**.
+MineIdle is built for deployment on modern infrastructure and will initially run on dedicated VPS instances. As demand increases, we plan to support:
+
+- Docker-based horizontal scaling
+- Kubernetes orchestration
+- Geo-distributed deployment for latency optimization
+
+All users access the service securely via [https://mineidle.xyz](https://mineidle.xyz), managing their sessions from anywhere.
+
+---
+
+## Subscription Model
+
+MineIdle is offered as a **monthly subscription service**. Each user can:
+
+- Register securely on the platform
+- Add and authenticate their own Minecraft accounts
+- Configure behaviors and proxy use per account
+- Launch and monitor idle sessions in real time
+
+> Subscription tiers will be announced at public launch. The service is currently in private alpha.
 
 Dashboard (not finished):
 
@@ -64,68 +70,53 @@ Dashboard (not finished):
 
 
 
-
-
-
-
----
-
-##  Subscription Model
-
-MineIdle will operate as a **subscription-based service**:
-
-- ✅ Users register accounts on the platform
-- ✅ Add Microsoft-authenticated Minecraft accounts
-- ✅ Configure session behaviors per account
-- ✅ Monitor activity & manage sessions remotely
-
-All data is isolated per user and stored securely.
-
-> Subscription plans will be announced after public release. Currently in private alpha.
-
----
-
 ## 🚀 Roadmap
 
-| Status | Feature                                          
-|--------|------------------------------------------------- 
-| ✅     | Microsoft OAuth2 login w/ refresh token support  
-| ✅     | Headless Minecraft sessions via mineflayer       
-| ✅     | Per-user MongoDB integration                     
-| ✅     | Proxy and AFK simulation features   
-| ✅     | Interact with other players through the built in chat panel
-| ⏳      | Final React dashboard & mobile support           
-| ⏳      | AppID approval request from Microsoft to allow seamless server connections without the need for device authcode         
-| ⏳      | Public SaaS launch with monthly billing          
+| Status | Feature                                                                 |
+|--------|-------------------------------------------------------------------------|
+| ✅     | Microsoft OAuth2 login with refresh support                             |
+| ✅     | Headless Minecraft sessions with mineflayer                             |
+| ✅     | Per-user MongoDB integration                                            |
+| ✅     | Anti-AFK actions and proxy routing                                      |
+| ✅     | In-browser chat interface and monitoring                                |
+| ⏳     | Final UI polish + mobile-friendly dashboard                             |
+| ⏳     | AppID whitelisting (Microsoft) for seamless access without device code  |
+| ⏳     | Public SaaS launch with billing system                                  |
 
 ---
 
-##  Security & Compliance
+## 🔐 Security & Compliance
 
-- Uses **official Microsoft APIs** — no spoofing or license circumvention
-- Refresh tokens are **securely encrypted at rest**
-- All network traffic is protected using HTTPS
-- Fully adheres to Mojang's EULA and developer guidelines
+- Microsoft tokens encrypted at rest using AES-256
+- All traffic encrypted via HTTPS
+- No token spoofing, license bypassing, or unauthorized automation
+- Fully aligns with Mojang’s EULA and Microsoft’s OAuth guidelines
 
-MineIdle is not a cheat client and is intended only for idle use, account presence, or personal server management.
-
----
-
-##  License & Usage
-
-MineIdle is provided for **personal, educational, and authorized use only**.
-
-NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
-
-Do not use it on public servers that forbid alternate accounts, bots, or automated play. Always respect server rules.
+MineIdle is **not a modded client**, **not a cheat tool**, and **not for public server abuse**. It is built strictly for idle presence on servers that allow such use.
 
 ---
 
-##  Acknowledgements
+## ⚠ Usage Notice
 
-- [PrismarineJS](https://github.com/PrismarineJS) – for the mineflayer bot engine
-- [Microsoft Identity Platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/) – for secure user auth
-- [MongoDB Atlas](https://www.mongodb.com/) – for hosted document database support
+This service is:
+
+- For educational, personal, and server-authorized purposes only
+- Not affiliated with Mojang, Microsoft, or the official Minecraft brand
+- Not to be used on servers that prohibit alternate accounts or automation
+
+Respect all server rules and use this tool responsibly.
+
+---
+
+## 🙌 Acknowledgements
+
+- [PrismarineJS](https://github.com/PrismarineJS) – for mineflayer
+- [Microsoft Identity Platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/) – for secure OAuth2 login
+- [MongoDB Atlas](https://www.mongodb.com/) – for hosted database support
+
+---
+
+**Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.**
 
 
 
