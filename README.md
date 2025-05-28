@@ -70,7 +70,7 @@ Dashboard (not finished):
 
 
 
-## 🚀 Roadmap
+##  Roadmap
 
 | Status | Feature                                                                 |
 |--------|-------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Dashboard (not finished):
 
 ---
 
-## 🔐 Security & Compliance
+##  Security & Compliance
 
 - Microsoft tokens encrypted at rest using AES-256
 - All traffic encrypted via HTTPS
@@ -96,7 +96,7 @@ MineIdle is **not a modded client**, **not a cheat tool**, and **not for public 
 
 ---
 
-## ⚠ Usage Notice
+##  Usage Notice
 
 This service is:
 
@@ -108,7 +108,7 @@ Respect all server rules and use this tool responsibly.
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - [PrismarineJS](https://github.com/PrismarineJS) – for mineflayer
 - [Microsoft Identity Platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/) – for secure OAuth2 login
