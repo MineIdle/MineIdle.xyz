@@ -92,7 +92,8 @@ All data is isolated per user and stored securely.
 | ✅     | Microsoft OAuth2 login w/ refresh token support  
 | ✅     | Headless Minecraft sessions via mineflayer       
 | ✅     | Per-user MongoDB integration                     
-| ✅     | Proxy and AFK simulation features                
+| ✅     | Proxy and AFK simulation features   
+| ✅     | Interact with other players through the built in chat panel
 | ⏳      | Final React dashboard & mobile support           
 | ⏳      | AppID approval request from Microsoft to allow seamless server connections without the need for device authcode         
 | ⏳      | Public SaaS launch with monthly billing          
