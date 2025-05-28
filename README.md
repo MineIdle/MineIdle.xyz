@@ -51,7 +51,6 @@ Initial launch will be deployed on high-uptime VPS instances, with long-term pla
 
 - Horizontal scaling via Docker/Kubernetes
 - Load balancing per user session cluster
-- Geo-distributed nodes for latency-sensitive performance
 
 Users will manage their accounts from anywhere through **https://mineidle.xyz**.
 
