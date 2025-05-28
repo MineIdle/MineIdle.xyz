@@ -2,7 +2,7 @@
 
 **MineIdle** is a secure, web-based platform designed to help users manage their own Minecraft accounts efficiently. It allows individuals to launch lightweight, headless Minecraft sessions via a browser-controlled dashboard—ideal for staying connected to personal or authorized servers without running the full Minecraft client locally.
 
-> ⚠️ MineIdle is in active development. It is intended strictly for **personal or authorized use only** and fully complies with Mojang’s [EULA](https://www.minecraft.net/en-us/eula) and [Usage Guidelines](http://aka.ms/mcusageguidelines).
+> ⚠️ MineIdle is in active development. It is intended strictly for **personal or authorized use only** and fully complies with Mojang’s [EULA](https://www.minecraft.net/en-us/eula) and [Usage Guidelines](http://aka.ms/mcusageguidelines) to the best of its ability.
 
 ---
 
@@ -41,9 +41,9 @@ MineIdle enables users to securely authenticate their Minecraft accounts via Mic
 
 MineIdle is built for deployment on modern infrastructure and will initially run on dedicated VPS instances. As demand increases, we plan to support:
 
-- Docker-based horizontal scaling
-- Kubernetes orchestration
-- Geo-distributed deployment for latency optimization
+- Docker-based horizontal scaling (if needed)
+- Kubernetes orchestration (if needed)
+- Geo-distributed deployment for latency optimization (if needed)
 
 All users access the service securely via [https://mineidle.xyz](https://mineidle.xyz), managing their sessions from anywhere.
 
@@ -92,7 +92,7 @@ Dashboard (not finished):
 - No token spoofing, license bypassing, or unauthorized automation
 - Fully aligns with Mojang’s EULA and Microsoft’s OAuth guidelines
 
-MineIdle is **not a modded client**, **not a cheat tool**, and **not for public server abuse**. It is built strictly for idle presence on servers that allow such use.
+MineIdle is **not a modded client**, **not a cheat tool**, and **not for public server abuse**. It is built strictly for idle presence on servers that allow such use and we trust that users abide by those rules.
 
 ---
 
